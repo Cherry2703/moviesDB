@@ -1,0 +1,112 @@
+.movie-details{
+    background: #000;
+    padding: 15px;
+    color: #fff;
+}
+
+.specific-movie-container{
+    background: #282929;
+    color: #fff;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.poster-container{
+    display: flex;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.each-movie-poster-image{
+    height: 200px;
+    width: 160px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+.movie-info-cont{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.backdrop-image{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.profile-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+.cast-list{
+    list-style-type:none;
+    display: flex;
+    overflow-x: scroll;
+    padding: 5px;
+}
+.cast-list li{
+    margin: 10px;
+}
+.cast-container-data{
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(148, 146, 146, 0.2), 0 6px 20px 0 rgba(134, 132, 132, 0.19);
+}
+
+.time-and-genre-cont{
+    display: flex;
+}
+.genres-container{
+    list-style-type: none;
+    display: flex;
+}
+.genres-container-li{
+    margin-left: 3px;
+}
+
+@media  screen and (max-width:576px) {
+    .specific-movie-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .each-movie-poster-image{
+        height: 300px;
+        width: 160px;
+        background-size: cover;
+        border-radius: 8px;
+        margin-top: 25px;
+    }
+    .backdrop-image{
+        border-radius: 8px;
+    }
+    .time-and-genre-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .genres-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width:768px){
+    .specific-movie-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .each-movie-poster-image{
+        height: 180px;
+        width: 160px;
+        background-size: cover;
+        border-radius: 8px;
+        margin-top: 25px;
+    }
+    .backdrop-image{
+        border-radius: 8px;
+    }
+}

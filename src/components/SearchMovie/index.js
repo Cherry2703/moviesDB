@@ -5,11 +5,11 @@ import { useEffect, useState } from "react"
 import EachMovieItem from "../EachMovieItem"
 
 const SearchMovie=()=>{
-    const [query,setQuery]=useSearchParams()
+    const [query,setQuery]=useSearchParams("")
     const [searchQueryInfo,setSearchQueryInfo]=useState([])
 
     const val=query.get("search")
-
+    
    useEffect(()=>{
 
     const getSearchQueryInfo=async (val)=>{
@@ -31,6 +31,7 @@ const SearchMovie=()=>{
     
    },[val])
 
+console.log(setQuery)
 
     return(
         <div className="main-container">

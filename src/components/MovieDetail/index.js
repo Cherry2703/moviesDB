@@ -61,7 +61,7 @@ console.log(genres)
                         </div>
                         <div>
                             <h4>OVERVIEW</h4>
-                            <p>{data.overview}</p>
+                            <p className="overview">{data.overview}</p>
                         </div>
                     </div>
                     <img src={`https://image.tmdb.org/t/p/w500${data.backdrop_path}`} className="backdrop-image" alt="backdrop_img"/>    

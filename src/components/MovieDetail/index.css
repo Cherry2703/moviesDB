@@ -34,6 +34,7 @@
 .backdrop-image{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    background-size: cover;
 }
 .profile-image{
     height: 100px;
@@ -64,6 +65,9 @@
 .genres-container-li{
     margin-left: 3px;
 }
+.overview{
+    margin-right: 6px;
+}
 
 @media  screen and (max-width:576px) {
     .specific-movie-container{
@@ -80,6 +84,7 @@
     }
     .backdrop-image{
         border-radius: 8px;
+        background-size: cover;
     }
     .time-and-genre-cont{
         display: flex;
@@ -108,5 +113,6 @@
     }
     .backdrop-image{
         border-radius: 8px;
+        background-size: cover;
     }
 }

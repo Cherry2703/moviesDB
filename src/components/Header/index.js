@@ -37,7 +37,8 @@ const Header=()=>{
 
     return(
         <nav>
-        <h1 className="logo">MoviesDB</h1>
+        <h1 className="">
+            <Link className="logo" to="/">MoviesDB</Link></h1>
         <div className="nav-links-container">
             <ul className="nav-links-container2">
                 {routes.map(each=>(
